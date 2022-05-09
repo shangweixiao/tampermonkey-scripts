@@ -49,6 +49,9 @@ dom.query(document).ready(function ($) {
         no_display(`[tpl="sp_rank"]`); // 单品榜
         no_display(`[tpl*="game-page"]`); // 百度游戏
         no_display(`[tpl*="b2b_prod"]`); // 百度爱采购
+        no_display(`.FYB_RD`);           // 百度热搜
+        no_display(`div[id*="_canvas"]`); // 推广链接
+        
         // 右侧栏广告
         $("#content_right > div").each(function () {
             if ($(this).attr('id') === undefined) {
